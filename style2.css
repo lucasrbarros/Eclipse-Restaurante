@@ -40,15 +40,28 @@
 }
 
 .categoria h2 {
-    font-size: 1.65em;
+    font-size: 1.8em;
     margin-bottom: 0.5rem; 
 }
 
 .prato-desc-preco {
     display: flex;
     justify-content: space-between;
+    align-items: center; 
+    margin-top: 1rem; 
+    width: 100%;
+    margin-bottom: 1rem;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1); /* Linha fina quase transparente */
+    padding-bottom: 1rem; /* Espaçamento abaixo da linha */
+}
+
+.prato-desc-preco-dif{
+    display: flex;
+    justify-content: space-between;
     align-items: flex-start; 
     margin-top: 1rem; 
+    flex-direction: column;
+    width: 100%;
 }
 
 .prato-desc {
@@ -84,8 +97,58 @@
 
 .descricao-prato-dif{
     display: flex;
-    align-items: center;
     justify-content: space-between;
-    flex-direction: row;
+    align-items: center;margin-top: 1rem;
+    width: 100%;
+    margin-bottom: 1rem;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    padding-bottom: 1rem;
+}
+
+.desc-dif{
+    font-size: 1.2em;
+    flex: 1; 
+    padding-right: 1rem;
+}
+
+.preco-dif{
+    /* padding-left: 10rem;    */
+    color: #251d19;
+    font-weight: 500;
+    font-size: 1.2em;
+    min-width: 6rem;
+    text-align: right;
+}
+.preco-dif p{
+    text-align: right;
+    color: #251d19;
+}
+.alinha-bebidas{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+}
+
+
+
+
+
+
+@media screen and (max-width:1330px){
+    .cardapio{
+        padding: 1rem;
+    }
+    .preco-dif{
+        padding-left: 2rem;
+    }
+    .descricao-prato-dif{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+        flex-direction: column;
+    }
 
 }
