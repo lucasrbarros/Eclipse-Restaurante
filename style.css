@@ -1,0 +1,429 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+/* HEADER */
+.cabecalho{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: row;
+    padding: 1.5rem;
+    background: linear-gradient(to bottom, white 30%, transparent 100%);
+    color: #B22222;
+    position: fixed;
+    z-index: 99;
+    width: 100%;
+}
+
+.logo{
+    width: 300px;
+}
+
+.opcoes{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    gap: 1.5rem;
+    font-size: 1.3em;
+    font-family: "Anton", sans-serif;
+}
+
+.opcao {
+    color: #B22222;
+    text-decoration: none;
+    font-size: 1.3em;
+    cursor: pointer;
+  }
+
+.opcao::before{
+    margin-left: auto;
+}
+.opcao::after, .opcao::before{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #f44336;
+    display: block;
+    transition: 0.5s;
+}
+.opcao:hover::after, .opcao:hover::before{
+    width: 100%;
+}
+
+/* FIM HEADER */
+/* IMAGEM COM SLOGAN */
+.container-imagem {
+    background: url(assets/imagens/paisagem/fundo-restaurante2.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: top;
+    height: 100vh;
+}
+
+.alinha-slogan{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding-top: 7rem;
+    /* padding: 2rem 0rem 3rem 3rem; */
+}
+.btn-menu{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 3rem;
+}
+
+.alinha-slogan h2{
+    font-family: "Roboto Mono", monospace;
+    font-size:50px;
+    color: hsla(39, 32%, 86%, 0.953);
+    font-weight: 900;
+}
+.alinha-slogan h1{
+    font-family: "Anton", sans-serif;
+    font-size: 150px;
+    color: #ffd700;
+    margin-top: -3rem;
+}
+.pedido{
+    width: 200px;
+    height: 50px;
+    border: none;
+    cursor: pointer;
+    background-color: #B22222;
+    font-size: 20px;
+    font-weight: 600;
+    color: #fff;
+}
+.pedido:hover{
+    background-color: #b35e5ef8;
+    border: 3px solid #B22222;
+    transition: 0.35s;
+}
+/* FIM IMAGEM COM SLOGAN */
+/* QUADRADOS COM CARACTERÍSTICAS */
+.container-square{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1.5rem;
+    gap: 4rem;
+    background-color: #E5D2C4;
+}
+.square{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* flex-direction: column; */
+    padding: 2rem 1rem;
+    background-color: #B22222;
+    gap: 1rem;
+    font-size: 18px;
+    width: 170px;
+    height: 90px;
+    color: #fff;
+}
+.titulo-icon{
+    font-size: 20px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    /* font-family: "Roboto Mono", monospace; */
+    font-family: "Poppins", sans-serif;
+}
+.titulo-icon p{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+.icon{
+    font-size: 26px;
+}
+
+/* FIM DOS QUADRADOS COM CARACTERÍSTICAS */
+/* FRASE DE EFEITO */
+
+.frase-efeito{
+    font-family: "Anton", sans-serif;
+    font-size: 2.2em;
+    color: #000;
+    /* text-shadow: rgb(0, 0, 0) -1px 2px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #E5D2C4;
+}
+.frase-efeito h2{
+    /* text-shadow:0.1em #000000; */
+    padding: 2rem 1rem;
+}
+
+/* FIM FRASE DE EFEITO */
+/* PRATO FAVORITO */
+.container-favorito{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    background-color: #E5D2C4;
+}
+.texto-favorito{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    flex: 1;
+    flex-direction: column;
+}
+.texto-favorito h3{
+    font-family: "Pacifico", cursive;
+   font-weight: 400;
+   font-style: normal;
+   font-size: 2.5em;
+   position: relative;
+   padding: 1rem;
+}
+.texto-favorito p{
+    font-family: "Roboto Mono", monospace;
+    padding: 3rem 13rem;
+    line-height: 2rem;
+}
+.imagem-favorito{
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.imagem-favorito img{
+    width: 100%;
+}
+
+.alinha-favorito{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    left: 500px;
+}
+.alinha-favorito img{
+    width: 200px;
+    left: 100px;
+}
+
+/* FIM PRATO FAVORITO */
+/* HISTÓRIA RESTAURANTE */
+.container-hist{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    background-color: #E5D2C4;
+}
+.img-hist{
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.img-hist img{
+    width: 100%;
+}
+.texto-hist{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    flex: 1;
+    flex-direction: column;
+}
+
+.texto-hist h3{
+    font-family: "Pacifico", cursive;
+   font-weight: 400;
+   font-style: normal;
+   font-size: 2.5em;
+   padding: 1rem;
+}
+.texto-hist p{
+    font-family: "Roboto Mono", monospace;
+    padding: 3rem 3rem;
+    line-height: 2rem;
+}
+/* FIM HISTÓRIA RESTAURANTE */
+/* REDES-SOCIAIS */
+.container-insta{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #E5D2C4;
+}
+.decora-insta{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    color: #B22222;
+}
+.texto-insta{
+    font-family: "Anton", sans-serif;
+    font-size: 2em;
+    padding: 2rem 0rem 0rem 0rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    gap: 1rem;
+}
+.fotos-insta{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    gap: 2rem;
+    padding: 2rem;
+}
+.fotos-insta img{
+    width: 15%;
+}
+/* FIM REDES-SOCIAIS */
+/* RODAPÉ */
+.rodape{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: row;
+    padding: 2rem;
+    background-color: #251d19;
+    color: #fff;
+}
+.contato{
+    font-family: "Roboto Mono", monospace;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.contato p{
+    font-size: 1.4em;
+    padding-bottom: 0.7rem;
+}
+.redes-icons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row; 
+    gap: 2rem;
+}
+.whats{
+    cursor: pointer;
+    font-size: 3em;
+    color: #3b8634;
+}
+.insta{
+    cursor: pointer;
+    font-size: 3em;
+    color: #DF00FF;
+}
+.e-mail{
+    cursor: pointer;
+    font-size: 3em;
+}
+.informacoes{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Roboto Mono", monospace;
+    line-height: 1.5rem;
+}
+.loc{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Roboto Mono", monospace;
+    line-height: 1.5rem;
+}
+.horario{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Roboto Mono", monospace;
+    line-height: 1.5rem;
+}
+/* FIM RODAPÉ */
+
+/* CARROSEL */
+.fundo-carousel {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 500px;
+    padding: 1.5rem;
+}
+    
+
+/* RESPONSIVO */
+
+@media screen and (max-width:1330px){
+    .container-square{
+        flex-direction: column;
+    }
+    .alinha-favorito{
+        flex-direction: column-reverse;
+    }
+    .texto-insta{
+        flex-direction: column;
+    }
+    .decora-insta{
+        font-size: 0.8em;
+    }
+    .container-hist{
+        flex-direction: column;
+    }
+    .container-favorito{
+        flex-direction: column-reverse;
+    }
+    .texto-favorito p{
+        padding: 3rem 1.4rem;
+    }
+    .texto-hist p{
+        padding: 3rem 1.4rem;
+    }
+    .alinha-slogan h1{
+        font-size: 125px;
+    }
+    .cabecalho{
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        padding: 0.5rem;
+    }
+    .logo{
+        display: none;
+    }
+    .fotos-insta img{
+        width: 30%;
+    }
+    .fotos-insta{
+        gap: 0rem;
+    }
+    .rodape{
+        flex-direction: column;
+    }
+    .horario p {
+        padding-bottom: 1rem;
+    }
+    .frase-efeito{
+        font-size: 1.8em;
+    }
+    .fundo-carousel{
+        width: 300px;
+    }
+}
